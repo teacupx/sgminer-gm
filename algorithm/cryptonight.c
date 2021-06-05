@@ -156,9 +156,9 @@ static inline uint64_t mul128(uint64_t a, uint64_t b, uint64_t* product_hi)
 {
 	uint64_t lo, hi;
 	
-	__asm__("mul %%rdx":
-	"=a" (lo), "=d" (hi):
-	"a" (a), "d" (b));
+	//__asm__("mul %%rdx":
+	//"=a" (lo), "=d" (hi):
+	//"a" (a), "d" (b));
 	
 	*product_hi = hi;
 	
